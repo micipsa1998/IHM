@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="d3.js"></script>
+  <script src = "https://d3js.org/d3.v5.js"> </script>
+  <script src="https://d3plus.org/js/d3.js"></script>
+  <script src="https://d3plus.org/js/d3plus.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#"> Dashboard</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="button" class="btn btn-default" data-toggle="collapse" data-target = "#sub">Submit</button>
+
+        </form>
+      </div>
+    </nav>
+  </header> 
+
+  <div class="container">
+    <h2>Tableau suivis de commandes</h2>
+    <div class="table-responsive">          
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>N° Commande</th>
+            <th>Nom client</th>
+            <th>Nom fournisseur</th>
+            <th>Adresse livrison</th>
+            <th>Date de livraison</th>
+            <th>status de la commande</th>
+          </tr>
+
+        </thead>
+    <tbody>
+      <tr class = "success">
+        <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse" data-target ="#num">1</button></td>
+        <td>2345124</td>
+        <td>Manon</td>
+        <td>H&M</td>
+        <td>15 rue de la liberté, Paris 75017</td>
+        <td>12/03/2021</td>
+        <td><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">validé</div></td>
+      </tr>
+
+      <tr class ="success">
+        <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse" data-target ="#num">2</button></td>
+        <td>2352524</td>
+        <td>S.Julien</td>
+        <td>ZARA</td>
+        <td>13 rue de la mort, Rouen 76300</td>
+        <td>12/03/2021</td>
+        <td><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">validé</div></td>
+
+      <tr class ="danger">
+        <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse"data-target ="#num">3</button></td>
+        <td>6787554</td>
+        <td>M.Pitt</td>
+        <td>MARA</td>
+        <td>3 rue tappi,Aubervillirs 93300</td>
+        <td>25/03/2021</td>
+        <td><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">rejetée</div></td>
+      </tr>
+
+      <tr class ="warning">
+        <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse"data-target ="#num">4</button></td>
+        <td>8755564</td>
+        <td>B.Nassim</td>
+        <td>CELIO</td>
+        <td>34 rue de clichy, Lyon 69000</td>
+        <td>21/03/2021</td>
+        <td><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">en cours </div></td>
+      </tr>
+
+      <tr class = "success">
+        <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse"data-target ="#num">5</button></td>
+        <td>4897574</td>
+        <td>K.Yanis</td>
+        <td>NANSA</td>
+        <td>65 rue de la chambre, Marseille 13450</td>
+        <td>16/03/2021</td>
+        <td><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">validé</div></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+  <button type="button" class="btn btn-success mb-2" data-toggle="collapse" data-target="#demo">Ajouter une commande</button>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Modifier une commande</button>
+  <button type="button" class="btn btn-danger mb-2" data-toggle="collapse" data-target="#sup">Supprimer une commande</button>
+
+  <div id="demo" class="collapse"><h1> cette fonctionalité n'est pas encore disponible pour le moment.</h1> </div>
+  <div id="num" class="collapse"> <h1>une erreur technique est survenue veuillez réessayer ultérieurement.</h1></div>
+  <div id="sub" class="collapse"> <h1>cette fonctionalité n'est pas encore disponible pour le moment.</h1> </div>
+  <div id="sup" class="collapse"> <h1>veuillez selectionner une ou plusieurs commandes.</h1> </div>
+
+
+</div>
+
+<footer>
+ <p>Contact: e-commerce-pro@gmail.com
+    <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+  </p>    
+
+</footer>
+
+
+
+</body>
+
+</html>
