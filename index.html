@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -10,8 +17,6 @@
   <script src="https://d3plus.org/js/d3.js"></script>
   <script src="https://d3plus.org/js/d3plus.js"></script>
   
-
-
 </head>
 <body>
   <header>
@@ -24,6 +29,7 @@
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="PieChart.html" id ="PieChart"> PieChart</a>
           <li><a href="BarChart.html" id ="BarChart"> BarChart</a>
+          <li><a href="chart.html" id ="BarChart"> chart</a>
         </ul>
          <form class="navbar-form navbar-left" action="/action_page.php">
           <div class="form-group">
@@ -34,6 +40,7 @@
            </div>
     </nav>
   </header> 
+
 
   <div class="container">
     <h2>Tableau suivis de commandes</h2>
@@ -163,9 +170,9 @@ modifier une commande  </button>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
+      </div>  
       <div class="modal-body">
-        cette fonctionalité ne foonctionne pas
+        Désolé, un probleme technique est survenue, veuillez reesayer plus tard
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -175,13 +182,19 @@ modifier une commande  </button>
 </div>
 
 
-
 </div>
 
-<footer>
- <p>Contact: e-commerce-pro@gmail.com
-    <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
-  </p>    
+<footer class = "container">
+	<ul class =" container" id = "cemenu">
+		<li>Contact: e-commerce-pro@gmail.com
+        <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+        </li>
+        <li>Politique confidentialités</li>
+        <li>Plan du site</li>
+        <li>Accessibilité</li>
+        <li>Conditions d'utilisation</li>
+    </ul>
+
 
 </footer>
 

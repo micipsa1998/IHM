@@ -28,6 +28,7 @@
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="PieChart.html" id ="PieChart"> PieChart</a>
           <li><a href="BarChart.html" id ="BarChart"> BarChart</a>
+          <li><a href="chart.html" id ="BarChart"> chart</a>
         </ul>
          <form class="navbar-form navbar-left" action="/action_page.php">
           <div class="form-group">
@@ -43,9 +44,13 @@
     <script>
 
 var myData = [
-  {"Race": "Commandes Validées", "Commands Percentage": 40,"color" :"green"},
-  {"Race": "Commandes Rejetées", "Commands Percentage": 20,"color" :"red"},
-  {"Race": "Commandes en cours", "Commands Percentage": 40,"color" :"yellow"}
+  {"Race": "Commandes effectutées le lundi", "Commands Percentage": 10,"color" :"blue"},
+  {"Race": "Commandes effectutées le mardi", "Commands Percentage": 10,"color" :"red"},
+  {"Race": "Commandes effectutées le mercredi", "Commands Percentage": 10,"color" :"white"},
+  {"Race": "Commandes effectutées le jeudi", "Commands Percentage": 10,"color" :"black"},
+  {"Race": "Commandes effectutées le vendredi", "Commands Percentage": 10,"color" :"green"},
+  {"Race": "Commandes effectutées le samedi", "Commands Percentage": 20,"color" :"orange"},
+  {"Race": "Commandes effectutées le dimanche", "Commands Percentage": 30,"color" :"yellow"}
 ];
 
 new d3plus.Pie()
