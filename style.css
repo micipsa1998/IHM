@@ -1,11 +1,11 @@
 .container{
-  padding: 80px;
-}
+  margin-top: 150px;
+  margin-right: 150px;
 
-p{
-padding-top:250px;
-border:1px;
-margin-left:0px;
-clear: both;
+}
+ul#cemenu li {
+	display:inline;
+	padding-right: 7rem;
+	
 
 }
