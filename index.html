@@ -6,27 +6,32 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="d3.js"></script>
   <script src = "https://d3js.org/d3.v5.js"> </script>
   <script src="https://d3plus.org/js/d3.js"></script>
   <script src="https://d3plus.org/js/d3plus.js"></script>
+  
+
+
 </head>
 <body>
   <header>
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">E-commands</a>
+        </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#"> Dashboard</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="PieChart.html" id ="PieChart"> PieChart</a>
+          <li><a href="BarChart.html" id ="BarChart"> BarChart</a>
         </ul>
-        <form class="navbar-form navbar-left" action="/action_page.php">
+         <form class="navbar-form navbar-left" action="/action_page.php">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search">
           </div>
           <button type="button" class="btn btn-default" data-toggle="collapse" data-target = "#sub">Submit</button>
-
-        </form>
-      </div>
+         </form>
+           </div>
     </nav>
   </header> 
 
@@ -96,18 +101,79 @@
         <td><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">validé</div></td>
       </tr>
 
+
     </tbody>
   </table>
 
 
-  <button type="button" class="btn btn-success mb-2" data-toggle="collapse" data-target="#demo">Ajouter une commande</button>
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Modifier une commande</button>
-  <button type="button" class="btn btn-danger mb-2" data-toggle="collapse" data-target="#sup">Supprimer une commande</button>
+  
 
-  <div id="demo" class="collapse"><h1> cette fonctionalité n'est pas encore disponible pour le moment.</h1> </div>
-  <div id="num" class="collapse"> <h1>une erreur technique est survenue veuillez réessayer ultérieurement.</h1></div>
-  <div id="sub" class="collapse"> <h1>cette fonctionalité n'est pas encore disponible pour le moment.</h1> </div>
-  <div id="sup" class="collapse"> <h1>veuillez selectionner une ou plusieurs commandes.</h1> </div>
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+  ajouter une commande
+  </button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        cette fonctionalité ne foonctionne pas
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+modifier une commande  </button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        cette fonctionalité ne foonctionne pas
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-danger mb-2" data-toggle="modal" data-target="#exampleModal">
+  Supprimer une commande
+  </button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        cette fonctionalité ne foonctionne pas
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 </div>
