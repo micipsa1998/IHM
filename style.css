@@ -1,11 +1,35 @@
 .container{
-  margin-top: 150px;
+  margin-top: 85px;
   margin-right: 150px;
 
 }
-ul#cemenu li {
+ul#foot li {
 	display:inline;
-	padding-right: 7rem;
-	
+	padding-right: 5.5rem;
+
+}
+.workfow > button{
+	margin-right:40px;
+}
+
+.workfow__stats{
+	position: relative;
+	display: inline-block;
+	min-height: 80px;
+
+}
+.workfow__statsNumber{
+	padding:15px;
+	border-radius: 50%;
+	margin-right: 150px;
+	border: 1px solid #d3d3d3;
+	background-color: #fff;
+	color: #000; 
+}
+.workflow__info{
+position: absolute;
+bottom: 10;
+right: 100px
+
 
 }

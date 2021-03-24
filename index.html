@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-
-
-
-
-
+  <script  src = " https://d3plus.org/js/d3plus-network.v0.5.full.min.js "> </script>
 
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src = "https://d3js.org/d3.v5.js"> </script>
-  <script src="https://d3plus.org/js/d3.js"></script>
-  <script src="https://d3plus.org/js/d3plus.js"></script>
+
   
 </head>
 <body>
@@ -45,147 +38,182 @@
   <div class="container">
     <h2>Tableau suivis de commandes</h2>
     <div class="table-responsive">          
-      <table class="table">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>N° Commande</th>
-            <th>Nom client</th>
-            <th>Nom fournisseur</th>
-            <th>Adresse livrison</th>
-            <th>Date de livraison</th>
-            <th>status de la commande</th>
-          </tr>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>N° Commande</th>
+              <th>Nom client</th>
+              <th>Nom fournisseur</th>
+              <th>Adresse livrison</th>
+              <th>Date de livraison</th>
+              <th>status de la commande</th>
+            </tr>
 
-        </thead>
-    <tbody>
-      <tr class = "success">
-        <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse" data-target ="#num">1</button></td>
-        <td>2345124</td>
-        <td>Manon</td>
-        <td>H&M</td>
-        <td>15 rue de la liberté, Paris 75017</td>
-        <td>12/03/2021</td>
-        <td><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">validé</div></td>
-      </tr>
+          </thead>
+          <tbody>
+            <tr class = "warning">
+              <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse" data-target ="#num">1</button></td>
+              <td>2345124</td>
+              <td>S.Manon</td>
+              <td>H&M</td>
+              <td>15 rue de la liberté, Paris 75017</td>
+              <td>12/03/2021</td>
+              <td><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">validé</div></td>
+            </tr>
 
-      <tr class ="success">
-        <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse" data-target ="#num">2</button></td>
-        <td>2352524</td>
-        <td>S.Julien</td>
-        <td>ZARA</td>
-        <td>13 rue de la mort, Rouen 76300</td>
-        <td>12/03/2021</td>
-        <td><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">validé</div></td>
+            <tr class ="success">
+              <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse" data-target ="#num">2</button></td>
+              <td>2352524</td>
+              <td>S.Julien</td>
+              <td>ZARA</td>
+              <td>13 rue de la mort, Rouen 76300</td>
+              <td>12/03/2021</td>
+              <td><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">validé</div></td>
 
-      <tr class ="danger">
-        <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse"data-target ="#num">3</button></td>
-        <td>6787554</td>
-        <td>M.Pitt</td>
-        <td>MARA</td>
-        <td>3 rue tappi,Aubervillirs 93300</td>
-        <td>25/03/2021</td>
-        <td><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">rejetée</div></td>
-      </tr>
+            <tr class ="danger">
+              <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse"data-target ="#num">3</button></td>
+              <td>6787554</td>
+              <td>M.Pitt</td>
+              <td>MARA</td>
+              <td>3 rue tappi,Aubervillirs 93300</td>
+              <td>25/03/2021</td>
+              <td><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">rejetée</div></td>
+            </tr>
 
-      <tr class ="warning">
-        <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse"data-target ="#num">4</button></td>
-        <td>8755564</td>
-        <td>B.Nassim</td>
-        <td>CELIO</td>
-        <td>34 rue de clichy, Lyon 69000</td>
-        <td>21/03/2021</td>
-        <td><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">en cours </div></td>
-      </tr>
+            <tr class ="warning">
+              <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse"data-target ="#num">4</button></td>
+              <td>8755564</td>
+              <td>B.Nassim</td>
+              <td>CELIO</td>
+              <td>34 rue de clichy, Lyon 69000</td>
+              <td>21/03/2021</td>
+              <td><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">en cours </div></td>
+            </tr>
 
-      <tr class = "success">
-        <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse"data-target ="#num">5</button></td>
-        <td>4897574</td>
-        <td>K.Yanis</td>
-        <td>NANSA</td>
-        <td>65 rue de la chambre, Marseille 13450</td>
-        <td>16/03/2021</td>
-        <td><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">validé</div></td>
-      </tr>
+            <tr class = "success">
+              <td><button type="button" class="btn btn-Light mb-2" data-toggle="collapse"data-target ="#num">5</button></td>
+              <td>4897574</td>
+              <td>K.Yanis</td>
+              <td>NANSA</td>
+              <td>65 rue de la chambre, Marseille 13450</td>
+              <td>16/03/2021</td>
+              <td><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">validé</div></td>
+            </tr>
+      </tbody>
+    </table>
+
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+    ajouter une commande
+    </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            cette fonctionalité ne foonctionne pas
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-    </tbody>
-  </table>
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+      modifier une commande  </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            cette fonctionalité ne foonctionne pas
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <button type="button" class="btn btn-danger mb-2" data-toggle="modal" data-target="#exampleModal">
+      Supprimer une commande
+      </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>  
+          <div class="modal-body">
+            Désolé, un probleme technique est survenue, veuillez reesayer plus tard
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
 
+ 
+
+  <div class="workfow container">
+    <button class="btn btn-secondary text-white p-4 mx-4">
+      <h6>step 1</h6>
+      <p>Gestion</p>
+    </button>
+    <div class="workfow__stats">
+        <div class="workfow__statsNumber bg-warning">1</div>
+        <div class="workflow__info">B.Nassim 15H 23 21/03/2021</div>
+    </div>
+
+    <button class="workfow__validor btn btn-secondary p-2">
+      <h6>step 2</h6>
+      <p>Budget</p>
+    </button>
+    <div class="workfow__stats">
+      <div class="workfow__statsNumber bg-danger">2</div>
+      <div class="workflow__info">M.Pitt 16H45 23/03/2021 </div>
+  </div>
+  <div class="workfow__stats">
+    <div class="workfow__statsNumber bg-warning">2</div>
+    <div class="workflow__info">S.Manon 11H 24 12/04/2021</div>
+</div>
+
+    <button class="workfow__validor btn btn-secondary p-2">
+      <h6>step 3</h6>
+      <p>Achat</p>
+    </button>
+    <div class="workfow__stats">
+      <div class="workfow__statsNumber bg-success">3</div>
+      <div class="workflow__info">K.Yanis 12h33 12/03/2021 </div>
+  </div>
   
 
-  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-  ajouter une commande
-  </button>
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        cette fonctionalité ne foonctionne pas
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
   </div>
-</div>
-
-
-  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
-modifier une commande  </button>
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        cette fonctionalité ne foonctionne pas
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<button type="button" class="btn btn-danger mb-2" data-toggle="modal" data-target="#exampleModal">
-  Supprimer une commande
-  </button>
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>  
-      <div class="modal-body">
-        Désolé, un probleme technique est survenue, veuillez reesayer plus tard
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 </div>
+
+
+
 
 <footer class = "container">
-	<ul class =" container" id = "cemenu">
+	<ul class =" container" id = "foot">
 		<li>Contact: e-commerce-pro@gmail.com
         <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
         </li>
@@ -198,7 +226,7 @@ modifier une commande  </button>
 
 </footer>
 
-
+<script src="https://d3plus.org/js/d3plus.js"></script>
 
 </body>
 
